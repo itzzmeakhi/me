@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Welcome to my Portfolio..!! </title>
+
+        <!-- CSS -->
+
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+
+        <!-- JS -->
+
+        <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <!-- Angular Js -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+        <!-- Google Font -->
+
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+        <!-- Font Awesome -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- Favicon -->
+
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+        <!-- Jquery -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+
+
+    </head>
+
+    <body ng-app = "myApp" ng-controller = "myCtrl">
+
+        <!-- NAVBAR PROPERTIES -->
+
+        <nav class = "navbar">
+
+            <a class = "navbar-brand" href = "#">
+                <img src = "images/logo_white_small.png" class = "img-fluid logo" alt = " itzzmeakhi logo">
+            </a>
+                     
+        </nav>
+
+        <!-- HEADER PROPERTIES -->
+
+        <div class = "container-fluid header">
+
+            <img class = "img-fluid header-img" src = "images/header-min.jpg" alt = "Akhil Picture">
+            
+            <div class = "content">
+            
+                <div class = "content-header">
+            
+                    <p class = "content-header-text"> Hii..! I'm Akhil, </p>
+            
+                </div>
+            
+                <ul class = "role-list">
+            
+                    <li class = "role-list-item item-1"> Full Stack Developer </li>
+                    <li class = "role-list-item item-1"> Data Science Enthusiast </li>
+            
+                </ul>
+            
+                
+            </div>
+            
+        </div>
+
+        <!-- ABOUT ME SECTION -->
+
+        <div class = "container-fluid about-me">
+
+            <div class = "row">
+            
+                <div class = "col offset-sm-1 col-sm-7">
+            
+                    <h3> Who am I ? </h3>
+            
+                    <p> 
+                        
+                        Hey there..! <br><br>
+                        My name is Akhil and I'm an final year BE Computer Science Student at Sathyabama University in Chennai. Working as a Bussiness Associate Intern in Cognizant.
+            
+                        I love to solve problems.  I love the challenge of finding a way and discovering solutions. I like to keep myself busy, so keeps on updating my skills.
+                            
+                        When I'm not coding, you will find me in the gym or reading fiction.
+                            
+                    </p>
+            
+                </div>
+            
+                <div class = "col col-sm-3">
+            
+                    <img src = "images/dp-min.jpg" class = "img-fluid rounded" alt = "Akhil_image">
+
+                </div>
+            
+            </div>
+            
+        </div>
+
+        <!-- EDUCATION SECTION -->
+
+        <div class = "container-fluid education-section">
+
+            <h3> Educational Qualification </h3>
+            
+            <div ng-repeat = "edu in edu_records">
+            
+                <ul class="timeline">
+            
+                    <li class="timeline-event">
+            
+                        <label class="timeline-event-icon"></label>
+                    
+                        <div class="timeline-event-copy">
+            
+                            <p class="timeline-event-thumbnail">{{edu.year}}</p>
+                    
+                            <h4> {{edu.header}} </h4>
+                            <h6> {{edu.course}} </h6>
+                            <h6> {{edu.college}}, {{edu.location}}, {{edu.state}}. </h6>
+                            <p><strong> Aggregate: {{edu.aggregate}} out of {{edu.outof}}</strong></p>
+                                    
+                        </div>
+                    </li>
+            
+                </ul>
+            
+            </div> 
+               
+        </div>
+
+        <!-- SKILLS SECTION -->
+
+        <div class = "container-fluid skills-section">
+
+            <div class = "skills">
+            
+                <hr class="hr-text" data-content="Technologies">
+            
+                <ul id="techlist">
+            
+                    <li> C  </li>
+                    <i> . </i>
+            
+                    <li> C++  </li>
+                    <i> . </i>
+            
+                    <li> Java  </li>
+                    <i> . </i>
+            
+                    <li> Python  </li>
+                    <i> . </i>
+            
+                    <li> HTML  </li>
+                    <i> . </i>
+            
+                    <li> CSS  </li>
+                    <i> . </i>
+            
+                    <li> Javascript  </li>
+                    <i> . </i>
+            
+                    <li> JQuery  </li>
+                    <i> . </i>
+            
+                    <li> Bootstrap  </li>
+                    <i> . </i>
+            
+                    <li> Vue.js / Angular Js  </li>
+                    <i> . </i>
+            
+                    <li> PHP  </li>
+                    <i> . </i>
+            
+                    <li> R  </li>
+                        
+                </ul>
+            
+            </div>
+            
+        </div>
+
+        <!-- Works Section -->
+
+        <div class = "container-fluid works-section">
+
+            <h4> Featured Works </h4>
+            
+            <div class = "row r1">
+            
+                <div class = "col offset-sm-2 col-sm-4 h-1">
+            
+                    <h5> Social Networking Site </h5>
+            
+                </div>
+            
+                <div class = "col col-sm-4">
+            
+                    <img src = "images/one-min.jpg" alt = "Project 1" class = "img-fluid img-1">
+            
+                </div>
+            
+                <a href = "https://github.com/itzzmeakhi/Social-Networking-Site-using-Php-and-Mysql" target = "_blank" class = "button b1"> View Project </a>
+            
+            </div>
+            
+            <div class = "row r2">
+            
+                <div class = "col offset-sm-2 col-sm-4 h-2">
+            
+                    <img src = "images/two-min.jpg" alt = "Project 2" class = "img-fluid img-2">
+            
+                </div>
+            
+                <div class = "col offset-sm-1 col-sm-4 h-2">
+            
+                    <h5> URL Shortener </h5>
+            
+                </div>
+            
+                <a href = "https://github.com/itzzmeakhi/littleurl" target = "_blank" class = "button b2"> View Project </a>
+            
+            </div>
+            
+            <div class = "row r3">
+            
+                <div class = "col col-sm-4 h-3">
+            
+                    <h5> Investigating TMDB Movie Dataset </h5>
+            
+                </div>
+            
+                <div class = "col offset-sm-2 col-sm-4 h-1">
+            
+                    <img src = "images/three-min.jpg" alt = "Project 3" class = "img-fluid img-3">
+            
+                </div>
+            
+                <a href = "https://github.com/itzzmeakhi/Investigate-TMDB-dataset" target = "_blank" class = "button b3"> View Project </a>
+            
+            </div>
+            
+            <div class = "row">
+            
+                <div class = "col offset-sm-4 col-sm-4">
+            
+                    <a href = "https://github.com/itzzmeakhi" target = "blank" class = "button-last"> View More <i class="fas fa-arrow-right"></i></a>
+            
+                </div>
+            
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATION SECTION -->
+
+        <div class = "container-fluid certification-section">
+
+            <h4> Recent Achievement's </h4>
+            
+            <div class = "row cert-row">
+            
+                <div class = "col offset-sm-1 col-sm-6">
+                    <a href = "https://confirm.udacity.com/9A7J6FE2" target = "_blank"><img src = "images/udacity.png" class = "img-fluid img-thumbnail" alt = "Udacity Certification"></a>
+                </div>
+            
+                <div class = "col col-sm-4 links">
+            
+                    <h6 align = "center"> Few more..!! </h6></br>
+                        
+                    <a href = "https://www.freecodecamp.org/certification/akhilmallidi/legacy-front-end" target = "_blank"> Front End Developer - Free Code Camp </a> </br>
+                    <a href = "https://nptel.ac.in/noc/E_Certificate/linkedin/noc16-cs23/NPTEL16CS2323150124.jpg" target = "_blank"> Introduction to Modern Application Developement - NPTEL </a></br>
+                    <a href = "https://drive.google.com/file/d/1din1RJIpU1g44JAR8uWGsW3vdi9L6OBW/view?usp=sharing" target = "_blank"> Web Designing - FITA </a></br>
+                    <a href = "https://courses.cognitiveclass.ai/certificates/f71fb98fc6c14b64a5acbd04c7404d41" target = "_blank"> Data Visualization with Python - Cognitive Class </a></br>
+                    <a href = "https://www.datacamp.com/statement-of-accomplishment/course/baf6cff4a9e1ad515bb2c126a63cb56b143fe43f" target = "_blank"> Intro to SQL for Data Science - DataCamp </a></br></br></br>
+            
+                    <div class = "hashtag">
+                        <h5> #LotMoreToAdd <i style = "color: red; font-size: 40px;" class="far fa-heart"></i> </h5>
+                    </div>
+                       
+                </div>
+            
+            </div>
+            
+            
+        </div>
+
+        <!-- PHOTOGRAPHY SECTION -->
+
+        <div class = "container-fluid photography-section">
+
+            <h4> Love with Photography <i class="fas fa-camera"></i></h4>
+            
+            <div class = "row">
+            
+                <div class = "col col-sm-3" ng-repeat = "photo in photography_records">
+            
+                    <div class = "card" style = "width: 12rem;">
+                        <img src = {{photo.url}} class = "card-img-top" height = "60%" alt = "click1">
+                        <div class = "card-body">
+                            <p class = "card-text" ng-bind-html = "photo.caption|trustAsHtml">  </p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <!--<div class = "col col-sm-3">
+            
+                    <div class = "card" style = "width: 12rem;">
+                        <img src = "../assets/click5.jpg" class = "card-img-top" alt="click2">
+                        <div class="card-body">
+                            <p class="card-text"> When coding is lub <i style = "color: orange;" class="fas fa-fire"></i></p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class = "col col-sm-3">
+            
+                    <div class = "card" style = "width: 12rem;">
+                        <img src = "../assets/click1.jpg" class = "card-img-top" alt="click3">
+                        <div class="card-body">
+                            <p class="card-text"> Take only Memories #TravelDairies</p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class = "col col-sm-3">
+            
+                    <div class = "card" style = "width: 12rem;">
+                        <img src = "../assets/click6.png" class = "card-img-top" alt="click4">
+                        <div class="card-body">
+                            <p class="card-text"> Time is precious. Be Busy in making Memories </p>
+                        </div>
+                    </div>
+            
+                </div>-->
+            
+            </div> 
+            
+            <div class = "row">
+                <div class = "col offset-sm-3 col-sm-5">
+                    <p> " To me, photography is an art of observation. It’s about finding something interesting in an ordinary place"</p>
+                </div>
+                <div class = "col sm-2 insta-link">
+                    <button href = "https://www.instagram.com/akhilclicks/" target = "_blank"> <i class="fab fa-instagram"></i> Follow @akhilclicks</button>
+                </div>
+            </div> 
+        
+        </div>
+
+        <!-- CONTACT SECTION -->
+
+        <div class = "container-fluid contact-section">
+
+            <h4> Wanna hear from me </h4>
+            
+            <div class = "row">
+            
+                <div class = "col offset-sm-1 col-sm-4">
+            
+                    <form id = "contact-form">
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Name</label>
+                            <input type="text" class="form-control form-control-sm" name = "name" id="formGroupExampleInput" placeholder="Your Name">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control form-control-sm" name = "email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control form-control-sm" name = "message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+            
+                        <button type="submit" id = "submit-btn" class="btn btn-primary btn-sm">Send</button>
+                        
+                    </form>
+            
+                </div>
+            
+                <div class = "col offset-sm-2 col-sm-4 links-contact">
+            
+                    <h6> Stay Connected ..! </h6>
+            
+                    <a href = "https://www.facebook.com/letsgoakki" target = "_blank"><i style = "font-size: 30px; color: #000;" class="fab fa-facebook-square"></i></a>
+                    <a href = "https://www.instagram.com/itzzmeakhi/" target = "_blank"><i style = "font-size: 30px; color: #000;" class="fab fa-instagram"></i></a>
+                    <a href = "https://github.com/itzzmeakhi" target = "_blank"><i style = "font-size: 30px; color: #000;" class="fab fa-github"></i></a>
+                    <a href = "https://www.linkedin.com/in/itzzmeakhi/" target = "_blank"><i style = "font-size: 30px; color: #000;" class="fab fa-linkedin"></i></a>
+                    <a href = "https://twitter.com/Itzzmeakhi" target = "_blank"><i style = "font-size: 30px; color: #000;" class="fab fa-twitter"></i></a>
+            
+                </div>
+            
+            </div>
+   
+        </div>
+
+        <!-- Footer Section -->
+
+        <div class = "container-fluid footer-section">
+
+            <h6> <i class="far fa-copyright"></i> Copyrights @itzzmeakhi 2019 </h6>
+            
+            <h6> Made with <i style = "color: red;" class="fas fa-heart"></i>  and <i class="fas fa-coffee"></i></h6>
+            
+        </div>
+            
+        
+            
+
+        <script>
+
+            var app = angular.module("myApp", []);
+
+            app.controller("myCtrl", function($scope) {
+
+                $scope.edu_records = [
+                    {
+                        course: 'BE - Computer Science and Technology',
+                        year: ' Graduating in 2019',
+                        college: 'Sathyabama Institute of Science and Technology',
+                        aggregate: '8.77 CGPA',
+                        outof: '10',
+                        location: 'Chennai',
+                        state: 'Tamil Nadu',
+                        header: 'Under Graduate'
+                    },
+                    {
+                        course: 'Higher Secondary Certificate (HSC)',
+                        year: 'Graduated in 2015',
+                        college: 'Sri Chaitanya Junior Kalasala',
+                        aggregate: '95%',
+                        outof: '100%',
+                        location: 'Vijayawada',
+                        state: 'Andhra Pradesh',
+                        header: 'College'
+                    },
+                    {
+                        course: 'Secondary School Certificate (SSC)',
+                        year: 'Graduated in 2013',
+                        college: 'Sri Chaitanya Techno School',
+                        aggregate: '9.8 CGPA',
+                        outof: '10',
+                        location: 'Rajahmundry',
+                        state: 'Andhra Pradesh',
+                        header: 'Schooling'
+                    }
+                ]
+
+                $scope.photography_records = [
+                    {
+                        url: 'images/click4-min.jpg',
+                        caption: 'Happiness is enjoying the little things in life'
+                    },
+                    {
+                        url: 'images/click5-min.jpg',
+                        caption: 'When coding is lub<i style = "color: orange;" class="fas fa-fire"></i>'
+                    },
+                    {
+                        url: 'images/click1-min.jpg',
+                        caption: 'Take only Memories #TravelDairies'
+                    },
+                    {
+                        url: 'images/click6.jpg',
+                        caption: 'Time is precious. Be Busy in making Memories'
+                    }
+                ]
+            });
+
+            app.filter('trustAsHtml',['$sce', function($sce) {
+                return function(text) {
+                    return $sce.trustAsHtml(text);
+                };
+            }]);
+
+            $( document ).ready(function() {
+
+
+                var $form = $('form#contact-form'),
+                url = 'https://script.google.com/macros/s/AKfycbwLxpAlMuiddtveLjWzWhZhx2rEJvDuItSPI1BNlwuC1uXkYMAn/exec'
+
+                $('#submit-btn').on('click', function(e) {
+                    e.preventDefault();
+                    var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                    }).success(
+                // do something
+                    );
+                })
+
+            });
+
+
+        </script>
+           
+    </body>
+
+</html>
