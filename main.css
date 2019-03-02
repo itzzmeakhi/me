@@ -125,9 +125,6 @@
     50% { border-color: #16a085 }
 }
 
-
-
-
 /*********************************************/
 /************ ABOUT ME PROPERTIES ************/
 /*********************************************/
@@ -230,6 +227,10 @@
 .timeline-event-copy h4 {
     font-size: 1.2em;
     margin-bottom: 1.2em;
+}
+
+.timeline-event-copy h6 {
+    font-size: 97%;
 }
 
 .timeline-event-copy strong {
@@ -561,20 +562,6 @@
     padding: 2% 0%;
 }
 
-@media only screen and (max-width: 480px) {
-
-    .insta-link {
-        line-height: 1.5;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-
-    .insta-link {
-        line-height: 1.5;
-    }
-}
-
 /**************************************************/
 /********** CONTACT SECTION PROPERTIES ************/
 /**************************************************/
@@ -610,6 +597,10 @@
     letter-spacing: 1px;
 }
 
+.contact-section .links-contact a i {
+    font-size: 30px;
+}
+
 /***********************************************/
 /************** FOOTER PROPERTIES **************/
 /***********************************************/
@@ -628,35 +619,119 @@
     top: 99%;
 }
 
-/*********************************************/
-/************* MEDIA QUERIES *****************/
-/*********************************************/
+/************************************/
+/********** MEDIA QUERIES ***********/
+/************************************/
 
 @media only screen and (max-width: 480px) {
 
-	
-    * {
-    	font-size: 20px;
-     }
-	
+    
     .header-img {
         position: relative;
         top: 20%;
         left: 40%;
         opacity: 0.9;
     }
-	
-    
-	
+
+    .insta-link {
+        line-height: 1.5;
+    }
+
+    .about-me img {
+        position: relative;
+        top: 30%;
+        height: auto;
+    }
+
+    .about-me h3 {
+        font-size: 145%;
+        padding-top: 10px;
+    }
+
+    .about-me p {
+        font-size: 90%;
+        line-height: 1.5;
+    }
+
+    .education-section h3 {
+        font-size: 135%;
+        padding-top: 10px;
+    }
+
+    .education-section {
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 2;
+    }
+
+    .timeline-event-copy p span,
+    .timeline-event-copy p strong {
+        display: none;
+    }
+
+    .skills-section .skills hr {
+        font-size: 105%;
+    }
+
+    .skills-section .skills li {
+        font-size: 75%;
+    }
+
+    .works-section h4 {
+        font-size: 135%;
+    }
+
+    .works-section h5 {
+        font-size: 95%;
+        line-height: 2;
+    }
+
+    .works-section a {
+        font-size: 70%;
+    }
+
+    .certification-section h4 {
+        padding-top: 30px;
+    }
+
+    .certification-section img {
+        position: relative;
+        top: 20%;
+    }
+
+    .certification-section .links {
+        letter-spacing: 1px;
+        font-size: 80%;
+    }
+
+    .certification-section .links .hashtag h5 {
+        font-size: 75%;
+    }
+
+    .photography-section h4 {
+        font-size: 125%;
+    }
+
+    .photography-section .card {
+        margin-bottom: 7%;
+    }
+
+    .contact-section h4{
+        padding-top: 20px;
+    }
+
+    .contact-section .links-contact a i {
+        font-size: 80%;
+    }
 
 }
 
 @media only screen and (max-width: 767px) {
 
     * {
-    	font-size: 20px;
-     }
-	
+        font-size: 23px;
+    }
+
     .header-img {
         position: relative;
         top: 20%;
@@ -673,6 +748,9 @@
         line-height: 1.5;
     }
 
-}
+    .insta-link {
+        line-height: 1.5;
+    }
 
+}
 
